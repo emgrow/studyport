@@ -1,0 +1,101 @@
+body {
+	font-family: 'Montserrat', sans-serif;
+	/*background-color: #F8F2F4;*/
+    background-color: #ffffff;
+    
+}
+h1, h2, h3, h4, h5, h6 {
+	font-family: 'Alata', sans-serif;
+	color: #453e6e;
+}
+
+/* nav bar flex box */
+.navigation {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-end;
+    list-style: none;
+    margin: 0;
+    background: #1B62C5;
+  }
+  
+  .navigation a {
+    text-decoration: none;
+    display: block;
+    padding: 1em;
+    color: white;
+  }
+  
+  .navigation a:hover {
+    background: #183263;
+  }
+
+  /* media query styles are only applied if the conditions are met*/
+  @media all and (max-width: 800px) {
+    .navigation {
+      flex-flow: column wrap;
+      padding: 0;
+    }
+  }
+  
+  @media all and (max-width: 600px) {
+    .navigation a {
+      text-align: center;
+      padding: 10px;
+      border-top: 1px solid rgba(255, 255, 255, 0.3);
+      border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+    }
+  }
+  
+  .navigation li:last-of-type a {
+    border-bottom: none;
+  }
+
+  /* account card styles */
+  .account-card{
+    max-width: 1200px;
+    margin: auto;
+    padding: 0px 20px 20px 20px;
+    width: 500px;
+    background-color: #F8F2F4;
+    border-radius: 10px;
+  }
+  .card-input{
+      display: block;
+      padding: 10px 0px 10px 0px;
+      width: 100%;
+  }
+  .card-text-input{
+      width: 100%;
+      height: 40px;
+      margin: auto;
+      border-radius: 10px;
+      border: 10px;
+  }
+
+  .account-card-button{
+      width:100%;
+      border-radius: 15px;
+      background-color: #7f76b4;
+      color: #ffffff;
+      height: 40px;
+      border: 10px;
+      margin: auto;
+  }
+
+  /* media query styles are only applied if the conditions are met*/
+@media all and (max-width: 800px) {
+    .account-card {
+      width: 75%;
+      margin: auto;
+    }
+  }
+  
+  @media all and (max-width: 600px) {
+    .account-card{
+      width: 100%
+    }
+  }
+  
+
+  
