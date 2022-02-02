@@ -14,3 +14,10 @@ function signup(){
 function login(){
     console.log()
 }
+
+function studentAccountSelected(){
+    console.log("student account selected")
+}
+function tutorAccountSelected(){
+    console.log("tutor account selected")
+}
